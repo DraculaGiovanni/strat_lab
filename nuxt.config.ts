@@ -3,13 +3,31 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: [
-    '@nuxt/ui',
-    '@nuxt/eslint'
+    [
+      '@nuxt/ui',
+      {
+        colors: {
+          'stratlab-green': '#2E5E2D',
+          'stratlab-yellow': '#FDBF3C'
+        }
+      }
+    ],
+    '@nuxt/eslint',
+    '@nuxt/icon',
+    '@nuxt/image',
+    '@nuxt/fonts'
   ],
 
   css: ['~/assets/css/main.css'],
 
-  future: {
+  fonts: {
+    families:[
+    {
+      name: 'Montserrat', provider: 'google', weights: [500]
+    }
+  ]
+},
+future: {
     compatibilityVersion: 4
   },
 
