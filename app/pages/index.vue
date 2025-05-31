@@ -1,4 +1,4 @@
-<template class="bg-white">
+<template>
   <div class="bg-white">
     <!-- Appel du composant Header -->
     <Header />
@@ -38,7 +38,7 @@
           </div>
         </div>
       </UContainer>
-      <br >
+     <br>
       <UContainer class="my-15 bg-white">
         <div class="flex flex-row gap-8">
           <!-- Côté gauche : image -->
@@ -74,10 +74,10 @@
           </div>
         </div>
       </UContainer>
-      <br >
+     <br>
 
       <UContainer class="my-15 bg-stratla-green rounded-md">
-        <br />
+       <br>
         <div class="flex flex-col gap-8">
           <!-- Premier div : h2 en haut, p et bouton en bas -->
           <div class="flex flex-col justify-between min-h px-4">
@@ -135,7 +135,7 @@
           </div>
         </div>
       </UContainer>
-      <br >
+     <br>
       <UContainer class="my-12 bg-stratla-green rounded-md">
         <div class="flex flex-col gap-8 p-6">
           <!-- Premier div : h2 et p centrés, boutons côte à côte -->
@@ -143,9 +143,7 @@
             <h2 class="text-3xl font-bold text-[#FDBF3C] font-montserrat">
               Rejoignez le mouvement
             </h2>
-            <p
-              class="text-lg text-white  font-montserrat text-center max-w-2xl"
-            >
+            <p class="text-lg text-white font-montserrat text-center max-w-2xl">
               Strat.Lab votre partenaire en gestion de projet pour des solutions
               sur mesure durables et innovantes.
             </p>
@@ -154,15 +152,13 @@
                 label="Adhésion individuelle"
                 color="text-[#FDBF3C] "
                 variant="solid"
-                
-               class="bg-[#FDBF3C] text-white "
+                class="bg-[#FDBF3C] text-white"
               />
               <UButton
                 label="Adhésion à l'organisation"
                 color="primary"
                 variant="solid"
-                
-                class=" text-white"
+                class="text-white"
               />
             </div>
           </div>
@@ -206,29 +202,33 @@
       <UContainer>
         <div class="flex flex-row gap-8">
           <UContainer class="flex-1 bg-gray-50 my-12 rounded-md p-6">
-            <h3 class="text-xl font-semibold text-gray-900 font-montserrat mb-2">
+            <h3
+              class="text-xl font-semibold text-gray-900 font-montserrat mb-2"
+            >
               Expertise
             </h3>
             <p class="text-base text-gray-700 font-montserrat">
               Nous accompagnons les collectivités territoriales et les
               institutions publiques dans la conception et la mise en œuvre de
-              projets de développement, en intervenant sur l’élaboration de plans
-              communaux et territoriaux, l’évaluation des politiques publiques, la
-              dynamique des acteurs et la structuration d’écosystèmes
-              collaboratifs, ainsi que la réalisation d’études d’impact et le
-              suivi-évaluation des projets.
+              projets de développement, en intervenant sur l’élaboration de
+              plans communaux et territoriaux, l’évaluation des politiques
+              publiques, la dynamique des acteurs et la structuration
+              d’écosystèmes collaboratifs, ainsi que la réalisation d’études
+              d’impact et le suivi-évaluation des projets.
             </p>
           </UContainer>
           <UContainer class="flex-1 bg-gray-50 rounded-md p-6 my-12">
-            <h3 class="text-xl font-semibold text-gray-900 font-montserrat mb-2">
+            <h3
+              class="text-xl font-semibold text-gray-900 font-montserrat mb-2"
+            >
               Impact
             </h3>
             <p class="text-base text-gray-700 font-montserrat">
               Nous accompagnons les collectivités territoriales et les
               institutions publiques dans la conception et la mise en œuvre de
               projets de développement à fort impact, en élaborant des plans
-              territoriaux stratégiques, en évaluant les politiques publiques, en
-              facilitant la collaboration entre acteurs, et en mesurant les
+              territoriaux stratégiques, en évaluant les politiques publiques,
+              en facilitant la collaboration entre acteurs, et en mesurant les
               retombées sociales, économiques et environnementales grâce à des
               dispositifs rigoureux de suivi et d’évaluation.
             </p>
@@ -263,16 +263,21 @@
           </div>
         </UContainer>
       </div>
-        <UContainer class="my-12 bg-stratlab-green rounded-md p-6">
+      <UContainer class="my-12 bg-stratlab-green rounded-md p-6">
         <div class="flex flex-col gap-12">
           <!-- Premier div : h3, span, et p centrés -->
           <div class="flex flex-col items-center gap-4">
-            <h3 class="text-3xl font-bold text-white font-montserrat text-center">
+            <h3
+              class="text-3xl font-bold text-white font-montserrat text-center"
+            >
               Apprendre + Grandir + Autonomiser
-              <span class="text-[#FDBF3C] block mt-2">= STRAT.LAB Community</span>
+              <span class="text-[#FDBF3C] block mt-2"
+                >= STRAT.LAB Community</span
+              >
             </h3>
             <p class="text-lg text-white font-montserrat text-center max-w-2xl">
-              Analyse des résultats d’impact et recommandations d’amélioration de Conseil en Innovation et Développement Durable
+              Analyse des résultats d’impact et recommandations d’amélioration
+              de Conseil en Innovation et Développement Durable
             </p>
           </div>
           <!-- Deux UContainer : côte à côte -->
@@ -287,11 +292,16 @@
                   height="200"
                   class="rounded-md"
                 />
-                <h3 class="text-xl font-semibold text-gray-900 font-montserrat text-center">
+                <h3
+                  class="text-xl font-semibold text-gray-900 font-montserrat text-center"
+                >
                   Intégrez un chapitre
                 </h3>
                 <p class="text-base text-gray-700 font-montserrat text-center">
-                  Les antennes STRAT.LAB offrent bien plus que du réseautage. Vous développerez des liens étroits avec des habitants partageant les mêmes valeurs, déterminés à enrichir la vie de chacun.
+                  Les antennes STRAT.LAB offrent bien plus que du réseautage.
+                  Vous développerez des liens étroits avec des habitants
+                  partageant les mêmes valeurs, déterminés à enrichir la vie de
+                  chacun.
                 </p>
               </div>
             </UContainer>
@@ -305,11 +315,15 @@
                   height="200"
                   class="rounded-md"
                 />
-                <h3 class="text-xl font-semibold text-gray-900 font-montserrat text-center">
+                <h3
+                  class="text-xl font-semibold text-gray-900 font-montserrat text-center"
+                >
                   Accès libre, à tout moment
                 </h3>
                 <p class="text-base text-gray-700 font-montserrat text-center">
-                  Imaginez pouvoir interagir avec des coachs du monde entier, à tout moment, où que vous soyez, du bout des doigts. Cette réalité vous attend sur STRAT.LAB.
+                  Imaginez pouvoir interagir avec des coachs du monde entier, à
+                  tout moment, où que vous soyez, du bout des doigts. Cette
+                  réalité vous attend sur STRAT.LAB.
                 </p>
               </div>
             </UContainer>
@@ -317,8 +331,9 @@
         </div>
       </UContainer>
     </main>
-    <Footer/>
-
+    <UContainer class="bg-stratla-green rounded-md p-6 text-white">
+      <Footer />
+    </UContainer>
   </div>
 </template>
 
@@ -332,9 +347,7 @@ export default {
 .bg-stratlab-green {
   background-color: #2e5e2d;
 }
-.bg-stratlabe-green {
-  background-color: #ffffff;
-}
+
 .bg-stratla-green {
   background-color: #2e5e2d;
 }
