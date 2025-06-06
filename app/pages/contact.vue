@@ -91,69 +91,70 @@
           </div>
         </UContainer>
       </div>
+      <UContainer>
+        <div class="flex justify-center gap-8">
+          <!-- Conteneurs individuels -->
+          <UContainer
+            class="flex flex-col items-center rounded-md p-4 text-white h-40 w-40 mx-auto border-t-4 border-b-4 border-blue-500"
+          >
+            <div class="flex flex-col items-center gap-2">
+              <a
+                href="https://www.youtube.com"
+                target="_blank"
+                aria-label="YouTube"
+              >
+                <Icon
+                  name="mdi:youtube"
+                  class="text-4xl text-red-500 hover:text-gray-300"
+                />
+              </a>
+              <span class="text-center text-black text-xs break-words"
+                >Rejoignez notre chaîne YouTube</span
+              >
+            </div>
+          </UContainer>
 
-      <div class="flex justify-center gap-8">
-        <!-- Conteneurs individuels -->
-        <UContainer
-          class="flex flex-col items-center rounded-md p-4 text-white h-40 w-40 mx-auto border-t-4 border-b-4 border-blue-500"
-        >
-          <div class="flex flex-col items-center gap-2">
-            <a
-              href="https://www.youtube.com"
-              target="_blank"
-              aria-label="YouTube"
-            >
-              <Icon
-                name="mdi:youtube"
-                class="text-4xl text-red-500 hover:text-gray-300"
-              />
-            </a>
-            <span class="text-center text-black text-xs break-words"
-              >Rejoignez notre chaîne YouTube</span
-            >
-          </div>
-        </UContainer>
+          <UContainer
+            class="flex flex-col items-center rounded-md p-4 text-white h-40 w-40 mx-auto border-t-4 border-b-4 border-blue-500"
+          >
+            <div class="flex flex-col items-center gap-2">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <Icon
+                  name="mdi:facebook"
+                  class="text-4xl text-blue-500 hover:text-gray-300"
+                />
+              </a>
+              <span class="text-center text-black text-xs break-words"
+                >Suivez-nous sur notre page Facebook</span
+              >
+            </div>
+          </UContainer>
 
-        <UContainer
-          class="flex flex-col items-center rounded-md p-4 text-white h-40 w-40 mx-auto border-t-4 border-b-4 border-blue-500"
-        >
-          <div class="flex flex-col items-center gap-2">
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              aria-label="Facebook"
-            >
-              <Icon
-                name="mdi:facebook"
-                class="text-4xl text-blue-500 hover:text-gray-300"
-              />
-            </a>
-            <span class="text-center text-black text-xs break-words"
-              >Suivez-nous sur notre page Facebook</span
-            >
-          </div>
-        </UContainer>
-
-        <UContainer
-          class="flex flex-col items-center rounded-md p-4 text-white h-40 w-40 mx-auto border-t-4 border-b-4 border-blue-500"
-        >
-          <div class="flex flex-col items-center gap-2">
-            <a
-              href="https://www.whatsapp.com"
-              target="_blank"
-              aria-label="WhatsApp"
-            >
-              <Icon
-                name="mdi:whatsapp"
-                class="text-4xl text-green-500 hover:text-gray-300"
-              />
-            </a>
-            <span class="text-center text-black text-xs break-words"
-              >Contactez-nous via WhatsApp</span
-            >
-          </div>
-        </UContainer>
-      </div>
+          <UContainer
+            class="flex flex-col items-center rounded-md p-4 text-white h-40 w-40 mx-auto border-t-4 border-b-4 border-blue-500"
+          >
+            <div class="flex flex-col items-center gap-2">
+              <a
+                href="https://www.whatsapp.com"
+                target="_blank"
+                aria-label="WhatsApp"
+              >
+                <Icon
+                  name="mdi:whatsapp"
+                  class="text-4xl text-green-500 hover:text-gray-300"
+                />
+              </a>
+              <span class="text-center text-black text-xs break-words"
+                >Contactez-nous via WhatsApp</span
+              >
+            </div>
+          </UContainer>
+        </div>
+      </UContainer>
 
       <div>
         <UContainer class="my-12 bg-stratla-green rounded-md p-6 text-black">
@@ -163,11 +164,12 @@
             <br />
             <form class="form">
               <div class="form-group">
-                <label for="name">Nom</label>
+                <label for="name" class="visually-hidden">Nom</label>
                 <input
                   type="text"
                   name="name"
                   class="form-control"
+                  placeholder="Nom"
                   style="
                     border: 1px solid white;
                     background-color: white;
@@ -176,11 +178,12 @@
                 />
               </div>
               <div class="form-group">
-                <label for="surname">Prénom</label>
+                <label for="surname" class="visually-hidden">Prénom</label>
                 <input
                   type="text"
                   name="surname"
                   class="form-control"
+                  placeholder="Prénom"
                   style="
                     border: 1px solid white;
                     background-color: white;
@@ -189,11 +192,12 @@
                 />
               </div>
               <div class="form-group">
-                <label for="email">Email</label>
+                <label for="email" class="visually-hidden">Email</label>
                 <input
                   type="email"
                   name="email"
                   class="form-control"
+                  placeholder="Email"
                   style="
                     border: 1px solid white;
                     background-color: white;
@@ -202,22 +206,49 @@
                 />
               </div>
               <div class="form-group">
-                <label for="message">Veuillez laisser votre message ici</label>
+                <label for="message" class="visually-hidden"
+                  >Veuillez laisser votre message ici</label
+                >
                 <textarea
                   id="message"
                   name="message"
-                  class="form-control"
-                  style="border: 1px solid white"
+                  class="form-control text-black"
+                  placeholder="Veuillez laisser votre message ici"
+                  style="background-color: #ffffff; border: 1px solid white"
                 ></textarea>
               </div>
-              <button type="submit" class="submit-button">Envoyer</button>
+              <div class="flex justify-center">
+                <button type="submit" class="submit-button text-center">
+                  Envoyer
+                </button>
+              </div>
             </form>
           </div>
         </UContainer>
       </div>
 
-      
+     <UContainer class="my-12 bg-stratla-green rounded-md p-6 text-white">
+  <div class="text-center">
+    <h1 class="text-3xl font-bold">
+      Changer des vies
+      <hr class="border-white my-2" />
+      <span class="text-yellow-500">Commencez par la vôtre.</span>
+    </h1>
+    <h1 class="text-3xl font-bold mt-4">Rejoignez Strat.Lab</h1>
+  </div>
+  <p class="text-center text-gray-200 mt-4">
+    C'est le moment. Lancez-vous dans l'aventure STRAT.LAB pour transformer la vie des gens, de leurs communautés et du monde.
+  </p>
+  <div class="text-center mt-6">
+    <button class="bg-white text-stratla-green font-semibold py-2 px-6 rounded-full text-black hover:bg-gray-100">
+      Join Us
+    </button>
+  </div>
+  <Footer />
+</UContainer>
     </main>
+      <!-- <UContainer class="bg-stratla-green rounded-md p-6 text-white">
+    </UContainer> -->
   </div>
 </template>
 
@@ -233,7 +264,16 @@
   max-width: 500px;
   margin: auto;
 }
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 .form-title {
   color: white;
   text-align: center;
